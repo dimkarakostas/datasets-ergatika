@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { TopNav } from "@/components/top-nav"
+import { FooterNav } from "@/components/footer-nav"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <main className="min-h-screen bg-background">
             <div className="container mx-auto px-4">{children}</div>
           </main>
+          <FooterNav />
         </ThemeProvider>
       </body>
     </html>
