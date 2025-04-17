@@ -242,6 +242,7 @@ jspm_packages/
 
 # next.js build output
 .next
+next-env.d.ts
 
 # Lerna
 lerna-debug.log
@@ -249,5 +250,7 @@ lerna-debug.log
 # System Files
 .DS_Store
 Thumbs.db
+
+pnpm-lock.yaml
 
 *.swp
