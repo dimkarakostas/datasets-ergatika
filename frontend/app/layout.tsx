@@ -3,13 +3,14 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { TopNav } from "@/components/top-nav"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Εργατικά Ατυχήματα στην Ελλάδα",
   description: "Διαδραστική απεικόνιση των ιστορικών δεδομένων εργατικών ατυχημάτων στην Ελλάδα",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <TopNav />
           <main className="min-h-screen bg-background">
             <div className="container mx-auto px-4">{children}</div>
           </main>
@@ -29,6 +31,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'
