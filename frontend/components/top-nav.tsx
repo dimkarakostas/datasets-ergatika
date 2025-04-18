@@ -16,7 +16,7 @@ export function TopNav() {
           <Link href="https://datasets.gr" target="_blank" rel="noopener noreferrer">
             <Button variant="ghost" className="flex items-center gap-2">
               <Database className="h-4 w-4" />
-              <span>Άλλα δεδομένα</span>
+              <span>datasets.gr</span>
             </Button>
           </Link>
         </div>
