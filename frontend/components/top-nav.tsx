@@ -13,7 +13,7 @@ export function TopNav() {
           </Button>
         </Link>
         <div className="flex items-center gap-2">
-          <Link href="https://datasets.gr" target="_blank" rel="noopener noreferrer">
+          <Link href="https://datasets.gr" rel="noopener noreferrer">
             <Button variant="ghost" className="flex items-center gap-2">
               <Database className="h-4 w-4" />
               <span>datasets.gr</span>
